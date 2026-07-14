@@ -1,3 +1,16 @@
-# Week 1
-
-
+# Week 1 : Python, Git, Linux, and Project Planning
+- Core Tasks:
+  - Configure the development environment
+  - Review Python fundamentals
+  - Learn modules, exceptions, JSON, and virtual environments
+  - Review Git and Linux commands
+  - Analyze the existing company website
+  - Organize project requirements
+  - Review C++ STL and complexity
+- Milestone:
+  - Development environment is ready
+  - GitHub repositories are created
+  - Website requirements and project backlog are completed
+- Growth:
+  - Build a professional development workflow
+  - Understand how software projects begin with planning
