@@ -57,13 +57,13 @@ void SPFAUpdate(vector<EDGE>* edges, int u, etype dist[maxn], queue<int>& q, boo
     }
 }
 
-int gcd(int a, int b) {
-    return !b ? a : gcd(b, a%b);
-}
+// int gcd(int a, int b) {
+//     return !b ? a : gcd(b, a%b);
+// }
 
-int lcm(int a, int b) {
-    return a / gcd(a, b) * b;
-}
+// int lcm(int a, int b) {
+//     return a / gcd(a, b) * b;
+// }
 
 void SPFA(vector<EDGE>* edges, int n, int s, etype dist[maxn]) {
     queue<int> q;
