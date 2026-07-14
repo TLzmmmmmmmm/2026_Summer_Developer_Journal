@@ -14,3 +14,10 @@
 - Growth:
   - Build a professional development workflow
   - Understand how software projects begin with planning
+
+
+## Day 1
+1. Installed WSL2 for Linux environment and connect it with VS Code.
+2. Move Docker database from disk C to disk D.
+3. Learn basic applications of Codex.
+
