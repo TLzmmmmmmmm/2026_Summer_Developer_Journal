@@ -23,5 +23,12 @@
    - Negative Flow Cycle
    - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/SPFA.cpp)
 
+### 3. Linear DP
+   - state transition / recurrence relation
+
+### 4. Topological sort
+   - give all possible legal order
+   - DAG (Directed Acyclic Graph)
+   - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Topological_Sort.cpp)
 
         
