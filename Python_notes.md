@@ -18,7 +18,7 @@
          - delete by value: list.remove(x)
          - delete by index: list.pop(index)
 
-## 2. for loop
+## 2. For loop
      - for **i** in **range()**:
          - traverse the list, and i is the value of current element in the given range
          - range(x) == int list from 0 to x-1
@@ -27,4 +27,8 @@
 
      - for **i** in **list**: 
          - traverse the list, and i is the value of current element in the given list
+
+## 3. While loop
+     - while ___:
+         - keep cycling until the condition is false
     
