@@ -31,4 +31,14 @@
    - DAG (Directed Acyclic Graph)
    - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Topological_Sort.cpp)
 
+### 5. memorized search
+   - use hash table to avoid repetitive calculation
+   - recursion
+
+### 6. 0/1 Knapsack
+   - find the optimum combination that has maximum value within limited space
+   - dp[i][j] == the combination of first i elements within space of j
+   - dp[i][j] = max( dp[i-1][j], dp[i-1][j-c[i]] + w[i])
+   - dp[0][0] = 0 and dp[o][i] = inf
+   - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Snapsack.cpp)
         
