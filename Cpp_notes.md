@@ -36,9 +36,14 @@
    - recursion
 
 ### 6. 0/1 Knapsack
-   - find the optimum combination that has maximum value within limited space
-   - dp[i][j] == the combination of first i elements within space of j
-   - dp[i][j] = max( dp[i-1][j], dp[i-1][j-c[i]] + w[i])
-   - dp[0][0] = 0 and dp[o][i] = inf
-   - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Snapsack.cpp)
+   - basic: 
+     - find the optimum combination that has maximum value within limited space
+     - dp[i][j] == the combination of first i elements within space of j
+     - dp[i][j] = max( dp[i-1][j], dp[i-1][j-c[i]] + w[i])
+     - dp[0][0] = 0 and dp[o][i] = inf
+     - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Snapsack.cpp)
+   - space optimization
+     - use 1D array to replace 2D array
+     - update ith row value from back to front using (i-1)th row's value
+     - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Snapsack_optimized.cpp)
         
