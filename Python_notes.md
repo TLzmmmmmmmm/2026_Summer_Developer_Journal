@@ -1,4 +1,4 @@
-# C++ Notes
+# Python Notes
 
 ## 1. List
      - list = [1, 2, 3, 4, 5]
@@ -31,4 +31,15 @@
 ## 3. While loop
      - while ___:
          - keep cycling until the condition is false
-    
+
+## 4. Tuple
+     - **immutable** sequence of **ordered** elements
+     - cannot change/add/delete elements once created
+     - tuple = (1, 2, 3, 4, 5)
+     - operations:
+         - tuple3 = tuple1 + tuple2
+     - delete
+         - del tuple1
+
+## 5. Dict
+     - **mutable** sequence of **unordered** elements
