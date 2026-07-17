@@ -38,12 +38,29 @@
 ### 6. 0/1 Knapsack
    - basic: 
      - find the optimum combination that has maximum value within limited space
-     - dp[i][j] == the combination of first i elements within space of j
+     - each item could only be selected once, either selected or not
+     - dp[i][j] == the maximum value of first i elements within space of exactly j
      - dp[i][j] = max( dp[i-1][j], dp[i-1][j-c[i]] + w[i])
      - dp[0][0] = 0 and dp[o][i] = inf
-     - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Snapsack.cpp)
+     - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Knapsack.cpp)
    - space optimization
      - use 1D array to replace 2D array
      - update ith row value from back to front using (i-1)th row's value
-     - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Snapsack_optimized.cpp)
-        
+     - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Knapsack_optimized.cpp)
+
+### 7. Complete Knapsack
+   - basic
+      - find the optimum combination that has maximum value within limited space
+      - each item could be selected as many as we want, unlimited
+      - dp[i][j] == the maximum value of first i elements within space of exactly j
+      - dp[i][j] = max(dp[i-1][j-k*c[i]] + k*w[i]) (the ith item is selected k times, where 0 <= k <= j/c[i]) 
+      - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_basic.cpp)
+   - time optimized
+      - dp[i][j] = max(dp[i-1][j], dp[i][j-c[i]] + w[i])
+      - we don't need the k loop anymore
+      - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_time_optimized.cpp)
+   - space optimized
+      - each element (dp[i][j]) in dp[n][m] depends only on row i and row i-1, so we could reduce the space to 1 row rather than n rows (2D -> 1D)
+      - go from the first element to the last element
+      - dp[j] = max( dp[j], dp[j-c[i]] + w[i])
+      - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_space_optimized.cpp)

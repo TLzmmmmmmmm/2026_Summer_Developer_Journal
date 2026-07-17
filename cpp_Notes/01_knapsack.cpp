@@ -19,16 +19,19 @@ void Knapsack01(int n, int V, int w[maxn], vType v[maxn], vType dp[maxn][maxv]) 
     for (int i = 1; i <= V; i++) {
         dp[0][i] = inf;
     }
-    dp[0][0] = 0;
+    dp[0][0] = init;
 
     // 2. state transition
     for (int i = 1; i <= n; i++) {
         for (int j = 0 ; j <= V; j++) {
-            if (j >= w[i]) {
-                dp[i][j] = opt( dp[i-1][j], dp[i-1][j-w[i]] + v[i]);
-            }
-            else {
-                dp[i][j] = dp[i-1][j];
+            dp[i][j] = dp[i-1][j];
+            
+            if (j >= w[i] && dp[i-1][j-w[i]] != inf)
+            {
+                dp[i][j] = max(
+                    dp[i][j],
+                    dp[i-1][j-w[i]] + v[i]
+                );
             }
         }
     }
