@@ -42,4 +42,11 @@
          - del tuple1
 
 ## 5. Dict
-     - **mutable** sequence of **unordered** elements
+     - __mutable__ sequence of __unordered__ elements
+     - key and value
+         - key is unique
+         - value can be any data type
+     - dict = {1:"a" , 2:"b", 3:"c"}
+     - operations
+         - find:
+             - abc
