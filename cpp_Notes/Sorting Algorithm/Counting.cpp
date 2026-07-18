@@ -35,7 +35,7 @@ void countingSort(vector<int>& a) {
     vector<int> output(a.size());
 
     // Traverse from right to left to preserve stability.
-    for (int i = a.size() - 1; i >= 0; i--) {
+    for (int i = static_cast<int>(a.size()) - 1; i >= 0; i--) {
         int countIndex = a[i] - minValue;
         int outputIndex = count[countIndex] - 1;
 

@@ -126,6 +126,84 @@
   - The input contains many repeated integer values.
 - Commonly used as a stable subroutine in Radix Sort.
 
+### 7. Bucket Sort
+
+- Description:
+  - Divide the input elements into several buckets according to their values.
+  - Sort the elements inside each bucket.
+  - Concatenate all buckets in order to obtain the final sorted array.
+- Distribution-based sorting algorithm.
+- Time Complexity:
+  - Best: `O(n + k)`
+  - Average: `O(n + k)`
+  - Worst: `O(n^2)`
+  - `n` is the number of elements.
+  - `k` is the number of buckets.
+  - The actual complexity also depends on the sorting algorithm used inside each bucket.
+- Space Complexity:
+  - Usually `O(n + k)`.
+- Stability:
+  - Bucket Sort can be stable if:
+    - Elements are inserted into buckets in their original order.
+    - A stable sorting algorithm is used inside each bucket.
+- Usually not in-place.
+- Efficient when:
+  - The value range is known.
+  - The elements are distributed relatively uniformly.
+  - The elements can be naturally divided into value intervals.
+
+### 8. Radix Sort
+
+- Description:
+  - Sort elements digit by digit.
+  - A stable sorting algorithm, usually Counting Sort, is used for each digit.
+- Non-comparison sorting algorithm.
+- Requirements:
+  - The keys must be representable by digits.
+- Basic Steps:
+  - Find the maximum value to determine the number of digits.
+  - Sort the elements by the ones digit.
+  - Repeat for the tens, hundreds, and higher digits.
+- Time Complexity:
+  - `O(d(n + b))`
+  - `d` is the number of digits.
+  - `b` is the numerical base, usually `10`.
+- Space Complexity:
+  - `O(n + b)`
+- Stability:
+  - Stable if the sorting method used for each digit is stable.
+- Usually not in-place.
+- Efficient when:
+  - Sorting many integers with a limited number of digits.
+
+### 9. Heap Sort
+
+- Description:
+  - Build a max-heap from the input array.
+  - Repeatedly move the maximum element to the end.
+  - Restore the max-heap after each removal.
+- Comparison-based sorting algorithm.
+- Basic Steps:
+  - Build a max-heap.
+  - Swap the root with the last unsorted element.
+  - Reduce the heap size.
+  - Apply heapify to restore the max-heap.
+- Time Complexity:
+  - Best: `O(n log n)`
+  - Average: `O(n log n)`
+  - Worst: `O(n log n)`
+  - Building the heap takes `O(n)`.
+- Space Complexity:
+  - `O(1)` excluding the recursion stack.
+- Stability:
+  - Not stable.
+- In-place sorting algorithm.
+- Efficient when:
+  - Guaranteed `O(n log n)` worst-case performance is required.
+  - Extra memory should be minimized.
+- Disadvantage:
+  - Usually slower in practice than Quick Sort because of poor cache locality.
+
 ## Graph Algorithms
 
 ### Shortest Path Algorithms
