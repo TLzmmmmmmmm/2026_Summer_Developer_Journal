@@ -17,6 +17,7 @@
 - In-place.
 - Usually unstable.
 - Performs only `O(n)` swaps, so it can be useful when writing or swapping elements is expensive.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Sorting Algorithm/Selection.cpp)
 
 ### 2. Insertion Sort
 
@@ -88,6 +89,42 @@
 - Generally fast for arrays because of good cache locality and small constant factors.
 - Randomized pivot selection reduces the probability of the worst case.
 - Three-way partitioning is useful when the array contains many duplicate values.
+
+### 6. Counting Sort
+
+- Description:
+  - Count how many times each value appears in the input array.
+  - Store the frequency of each value in a counting array.
+  - Reconstruct the sorted array according to the frequencies.
+- Non-comparison sorting algorithm.
+- Requirements:
+  - The values must be integers or convertible into integer keys.
+  - The value range should not be too large compared with the number of elements.
+- Basic Steps:
+  - Find the minimum and maximum values.
+  - Create a counting array for the range from `minValue` to `maxValue`.
+  - For each element `x`, increase:
+    - `count[x - minValue]`
+  - Traverse the counting array in ascending order.
+  - Write each value back according to its frequency.
+- Time Complexity:
+  - Best: `O(n + k)`
+  - Average: `O(n + k)`
+  - Worst: `O(n + k)`
+  - `n` is the number of elements.
+  - `k` is the size of the value range:
+    - `k = maxValue - minValue + 1`
+- Space Complexity:
+  - `O(k)` for the basic implementation.
+  - `O(n + k)` for the stable implementation using an output array.
+- Stability:
+  - The basic reconstruction version is not generally used to preserve the relative order of associated records.
+  - Counting Sort can be stable when prefix sums and an output array are used.
+- Usually not in-place.
+- Efficient when:
+  - `k` is small or comparable to `n`.
+  - The input contains many repeated integer values.
+- Commonly used as a stable subroutine in Radix Sort.
 
 ## Graph Algorithms
 
