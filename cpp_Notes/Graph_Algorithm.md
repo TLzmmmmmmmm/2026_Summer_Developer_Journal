@@ -49,6 +49,7 @@
   - Negative-cycle detection is required.
 - Disadvantage:
   - Usually slower than Dijkstra when all edge weights are non-negative.
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Graph_Algorithm/BellmanFord.cpp)
 
 ### 3. SPFA — Shortest Path Faster Algorithm
 
@@ -94,6 +95,7 @@
   - Many shortest-path queries between different pairs are required.
 - Important:
   - Avoid adding `INF` to another value during the state transition.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Graph_Algorithm/FloydWarshall.cpp)
 
 ## Minimum Spanning Tree Algorithms
 
@@ -131,6 +133,7 @@
   - Both may use a min-heap.
   - Dijkstra minimizes distance from a source.
   - Prim minimizes the cost of connecting a new vertex to the current tree.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Graph_Algorithm/Prim.cpp)
 
 ## Graph Traversal
 
