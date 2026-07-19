@@ -17,7 +17,7 @@
   - `dist[v] = min(dist[v], dist[u] + weight(u, v))`
 - Time Complexity:
   - `O((V + E) log V)` with an adjacency list and a binary heap.
-- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Dijkstra_Heap.cpp)
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Graph_Algorithm/Dijkstra_Heap.cpp)
 
 ### 2. Bellman–Ford Algorithm
 
@@ -63,7 +63,7 @@
   - Continue until the queue becomes empty.
 - Worst-case Time Complexity: `O(VE)`
 - A reachable negative-weight cycle can be detected by tracking relaxation or enqueue counts.
-- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/SPFA.cpp)
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Graph_Algorithm/SPFA.cpp)
 
 ### 4. Floyd–Warshall Algorithm
 
@@ -147,4 +147,4 @@
 - Common implementations:
   - Kahn's algorithm using indegrees and a queue.
   - DFS-based topological sorting.
-- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Topological_Sort.cpp)
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Graph_Algorithm/Topological_Sort.cpp)
