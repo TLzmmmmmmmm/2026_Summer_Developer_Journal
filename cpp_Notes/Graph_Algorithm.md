@@ -153,6 +153,7 @@
   - Topological sorting.
   - Backtracking.
   - Tree traversal.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Graph_Algorithm/DFS.cpp)
 
 ### BFS — Breadth-First Search
 - Description:
@@ -168,6 +169,7 @@
   - Level-order traversal.
   - Connected components.
   - Bipartite-graph checking.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Graph_Algorithm/BFS.cpp)
 
 ## Topological Sorting
 
