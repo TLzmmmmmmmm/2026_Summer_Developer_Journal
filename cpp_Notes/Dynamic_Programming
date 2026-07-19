@@ -1,0 +1,104 @@
+# Dynamic Programming
+
+## 1. Linear DP
+
+- States are usually arranged in a linear order.
+- Each state depends on one or more previous states.
+- Key concepts:
+  - State definition.
+  - Base case.
+  - State transition.
+  - Recurrence relation.
+  - Iteration order.
+
+## 2. Memoized Search
+
+- Also called top-down dynamic programming.
+- Use recursion to solve subproblems.
+- Store previously computed results in an array, vector, map, or hash table.
+- Return the cached result when the same state is visited again.
+- Avoid repeated computation of overlapping subproblems.
+
+## 3. Knapsack DP
+
+- Common notation:
+  - `V`: knapsack capacity.
+  - `w[i]`: weight of item `i`.
+  - `v[i]`: value of item `i`.
+  - `UNREACHABLE`: a state that cannot be formed.
+
+### 3.1 0/1 Knapsack
+
+- Each item can be selected at most once.
+
+- Basic DP:
+  - Find the maximum total value without exceeding the knapsack capacity.
+  - Each item has two choices:
+    - Do not select it.
+    - Select it once.
+  - State definition:
+    - `dp[i][j]` is the maximum value using the first `i` items with an exact total weight of `j`.
+  - State transition:
+    - Do not select item `i`:
+      - `dp[i - 1][j]`
+    - Select item `i`:
+      - `dp[i - 1][j - w[i]] + v[i]`
+    - Therefore:
+      - `dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w[i]] + v[i])`
+    - The second transition is allowed only when:
+      - `j >= w[i]`
+      - `dp[i - 1][j - w[i]]` is reachable.
+  - Initialization:
+    - `dp[0][0] = 0`
+    - `dp[0][j] = UNREACHABLE` for every `j > 0`.
+  - Final answer for capacity at most `V`:
+    - `max(dp[n][j])` for `0 <= j <= V`.
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Knapsack.cpp)
+
+- Space Optimization:
+  - Replace the two-dimensional DP array with a one-dimensional array.
+  - State:
+    - `dp[j]` is the maximum value with an exact total weight of `j`.
+  - Iterate the capacity in descending order:
+    - From `V` down to `w[i]`.
+  - State transition:
+    - `dp[j] = max(dp[j], dp[j - w[i]] + v[i])`
+  - Descending iteration prevents the current item from being selected more than once.
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Knapsack_optimized.cpp)
+
+### 3.2 Complete Knapsack
+
+- Each item can be selected an unlimited number of times.
+
+- Basic DP:
+  - Find the maximum total value without exceeding the knapsack capacity.
+  - State definition:
+    - `dp[i][j]` is the maximum value using the first `i` item types with an exact total weight of `j`.
+  - Suppose item `i` is selected `k` times:
+    - `0 <= k <= j / w[i]`
+  - State transition:
+    - `dp[i][j] = max(dp[i - 1][j - k * w[i]] + k * v[i])`
+    - Take the maximum over all valid values of `k`.
+  - Initialization:
+    - `dp[0][0] = 0`
+    - `dp[0][j] = UNREACHABLE` for every `j > 0`.
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_basic.cpp)
+
+- Time Optimization:
+  - Optimized state transition:
+    - `dp[i][j] = max(dp[i - 1][j], dp[i][j - w[i]] + v[i])`
+  - The second term uses row `i`, so item `i` may be selected again.
+  - The explicit `k` loop is no longer required.
+  - Time Complexity:
+    - Reduced from approximately `O(nV^2)` to `O(nV)`.
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_time_optimized.cpp)
+
+- Space Optimization:
+  - Each state depends only on the current row and the previous row.
+  - Replace the two-dimensional array with a one-dimensional array.
+  - Iterate the capacity in ascending order:
+    - From `w[i]` to `V`.
+  - State transition:
+    - `dp[j] = max(dp[j], dp[j - w[i]] + v[i])`
+  - Ascending iteration allows the current item to be selected repeatedly.
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_space_optimized.cpp)
