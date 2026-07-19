@@ -53,7 +53,7 @@
     - `dp[0][j] = UNREACHABLE` for every `j > 0`.
   - Final answer for capacity at most `V`:
     - `max(dp[n][j])` for `0 <= j <= V`.
-  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Knapsack.cpp)
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Dynamic_Programming/01_knapsack.cpp)
 
 - Space Optimization:
   - Replace the two-dimensional DP array with a one-dimensional array.
@@ -64,7 +64,7 @@
   - State transition:
     - `dp[j] = max(dp[j], dp[j - w[i]] + v[i])`
   - Descending iteration prevents the current item from being selected more than once.
-  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/01_Knapsack_optimized.cpp)
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Dynamic_Programming/01_Knapsack_optimized.cpp)
 
 ### 3.2 Complete Knapsack
 
@@ -82,7 +82,7 @@
   - Initialization:
     - `dp[0][0] = 0`
     - `dp[0][j] = UNREACHABLE` for every `j > 0`.
-  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_basic.cpp)
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Dynamic_Programming/Complete_Knapsack_basic.cpp)
 
 - Time Optimization:
   - Optimized state transition:
@@ -91,7 +91,7 @@
   - The explicit `k` loop is no longer required.
   - Time Complexity:
     - Reduced from approximately `O(nV^2)` to `O(nV)`.
-  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_time_optimized.cpp)
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Dynamic_Programming/Complete_Knapsack_time_optimized.cpp)
 
 - Space Optimization:
   - Each state depends only on the current row and the previous row.
@@ -101,4 +101,4 @@
   - State transition:
     - `dp[j] = max(dp[j], dp[j - w[i]] + v[i])`
   - Ascending iteration allows the current item to be selected repeatedly.
-  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Complete_Knapsack_space_optimized.cpp)
+  - [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Dynamic_Programming/Complete_Knapsack_space_optimized.cpp)
