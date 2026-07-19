@@ -135,8 +135,36 @@
 ## Graph Traversal
 
 ### DFS — Depth-First Search
+- Description:
+  - Explore as deeply as possible before backtracking.
+- Common Implementations:
+  - Recursion.
+  - Explicit stack.
+- Time Complexity:
+  - `O(V + E)` with an adjacency list.
+- Space Complexity:
+  - `O(V)` excluding graph storage.
+- Common Uses:
+  - Connected components.
+  - Cycle detection.
+  - Topological sorting.
+  - Backtracking.
+  - Tree traversal.
 
 ### BFS — Breadth-First Search
+- Description:
+  - Explore vertices level by level.
+- Data Structure:
+  - Queue.
+- Time Complexity:
+  - `O(V + E)` with an adjacency list.
+- Space Complexity:
+  - `O(V)` excluding graph storage.
+- Common Uses:
+  - Shortest paths in unweighted graphs.
+  - Level-order traversal.
+  - Connected components.
+  - Bipartite-graph checking.
 
 ## Topological Sorting
 
