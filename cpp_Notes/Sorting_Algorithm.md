@@ -15,7 +15,7 @@
 - In-place.
 - Usually unstable.
 - Performs only `O(n)` swaps, so it can be useful when writing or swapping elements is expensive.
-- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Sorting Algorithm/Selection.cpp)
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Sorting_Algorithm/Selection.cpp)
 
 ## 2. Insertion Sort
 
@@ -32,6 +32,7 @@
 - Stable if equal elements are not moved past each other.
 - Efficient for small or nearly sorted arrays.
 - Commonly used as a subroutine in hybrid sorting algorithms.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Sorting_Algorithm/Insertion.cpp)
 
 ## 3. Bubble Sort
 
@@ -48,6 +49,7 @@
 - Stable if elements are swapped only when the left element is strictly greater.
 - Mainly useful for learning and very small inputs.
 - Stop early if no swap occurs during an iteration.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Sorting_Algorithm/Bubble.cpp)
 
 ## 4. Merge Sort
 
@@ -66,6 +68,7 @@
 - Usually not in-place for arrays.
 - Suitable for linked lists and external sorting.
 - Guarantees `O(n log n)` time complexity.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Sorting_Algorithm/Merge.cpp)
 
 ## 5. Quick Sort
 
@@ -87,6 +90,7 @@
 - Generally fast for arrays because of good cache locality and small constant factors.
 - Randomized pivot selection reduces the probability of the worst case.
 - Three-way partitioning is useful when the array contains many duplicate values.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Sorting_Algorithm/Quick.cpp)
 
 ## 6. Counting Sort
 
@@ -123,6 +127,7 @@
   - `k` is small or comparable to `n`.
   - The input contains many repeated integer values.
 - Commonly used as a stable subroutine in Radix Sort.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Sorting_Algorithm/Counting.cpp)
 
 ## 7. Bucket Sort
 
@@ -173,6 +178,7 @@
 - Usually not in-place.
 - Efficient when:
   - Sorting many integers with a limited number of digits.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Sorting_Algorithm/Radix.cpp)
 
 ## 9. Heap Sort
 
@@ -201,3 +207,4 @@
   - Extra memory should be minimized.
 - Disadvantage:
   - Usually slower in practice than Quick Sort because of poor cache locality.
+- [Template Code](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/templates/Sorting_Algorithm/Heap.cpp)
