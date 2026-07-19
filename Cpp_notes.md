@@ -1,13 +1,13 @@
 # C++ Notes
 
-## [Sorting Algorithms](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Sorting_Algorithm.md)
+## 1. [Sorting Algorithms](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Sorting_Algorithm.md)
 
 
-## Array and Sequence Techniques
+## 2. [Array and Sequence Techniques](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Array_Techniques.md)
 
 
 
-## Graph Algorithms
+## 3. [Graph Algorithms](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Graph_Algorithm.md)
 
 
-## Dynamic Programming
+## 4. [Dynamic Programming](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Dynamic_Programming.md)
