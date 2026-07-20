@@ -1,0 +1,14 @@
+# Week 2: Python OOP and Website Frontend
+- Core Tasks:
+  - Learn Python OOP, type hints, and pytest
+  - Learn NumPy and pandas fundamentals
+  - Design the website structure
+  - Build the homepage and product pages
+  - Complete responsive layouts
+  - Practice BFS, DFS, and shortest paths
+- Milestone:
+  - First frontend version is completed
+  - Python code can be organized into reusable modules
+- Growth:
+  - Advance from basic scripting to structured development
+  - Improve modern frontend development skills

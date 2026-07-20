@@ -16,8 +16,27 @@
   - Understand how software projects begin with planning
 
 
-## Day 1
-1. Installed WSL2 for Linux environment and connect it with VS Code.
-2. Move Docker database from disk C to disk D.
-3. Learn basic applications of Codex.
+## Reflection
+1. What I have done:
+- configure the development environment, WSL virtual machine for linux system
+- review python fundamentals
+- review and learn c++ algorithms
+- use github to build a repository for my c++ and python notes
+- use markdown document to take notes, and use markdown commands to format my note
+
+2. What I have not done:
+- learn higher level python programming knowledge, including modules, exceptions, JSON, and virtual environments
+- analyze the current website and design a new UI for my website
+
+3. What I am not doing well
+- 1. time management
+  - Too much time watching matches and videos
+- 2. too lazy
+  - too much sleep and snap on the afternoon
+- 3. stay up late and get up late
+
+4. What I should do next week
+  - have a regular schedule
+  - make daily plan every night
+  - sleep well, get regular and solid sleep
 
