@@ -11,3 +11,5 @@
 
 
 ## [4. Dynamic Programming](https://github.com/TLzmmmmmmmm/2026_Summer_Developer_Journal/blob/main/cpp_Notes/Dynamic_Programming.md)
+
+## [5. Advanced Data Structure]
