@@ -3,8 +3,8 @@
 ## 1. function
 - ```python
     def funcName(parameter: dataType) -> returnType:
-    ...
-    return ...
+        ...
+        return ...
   ```
 - Function name：
   - only include letter, nuber, and underline
@@ -15,8 +15,10 @@
   - variable-length arguments / variadic arguments -- func(*c)
 
 ## 2. class
-- ```class className:
-    ---
-    ---
-    def __init__
+- ```python
+    class className:
+        ...
+        ...
+        def __init__(self):
+            ...
   ```
