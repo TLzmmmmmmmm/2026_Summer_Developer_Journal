@@ -17,6 +17,8 @@
 - delete:
     - delete by value: list.remove(x)
     - delete by index: list.pop(index)
+- methods:
+    - append(obj) / insert(index, obj) / count(obj) / index(obj) / remove(obj) / reverse()
 
 ## 2. For loop
 - for **i** in **range()**:
@@ -55,3 +57,5 @@
     - delete:
         delete an element --> del dict[key]
         delete the whole dict --> del dict
+- methods:
+    - keys() / values() / clear()

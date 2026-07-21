@@ -22,3 +22,5 @@
         def __init__(self):
             ...
   ```
+- Attribute and Method
+- Object
